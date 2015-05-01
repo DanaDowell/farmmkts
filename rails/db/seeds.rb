@@ -5,6 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-City.create(name: 'Sausalito');
-City.create(name: 'Mill Valley');
-City.create(name: 'Larkspur');
+saus = City.create(name: 'Sausalito');
+mv = City.create(name: 'Mill Valley');
+larks = City.create(name: 'Larkspur');
+
+saus.markets.create(title: "saus 1");
+saus.markets.create(title: "saus 2");
+mv.markets.create(title: "mv 1");
+larks.markets.create(title: "larks 1");
+larks.markets.create(title: "larks 2");

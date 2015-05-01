@@ -1,4 +1,5 @@
-{{#each}}
+{{#each city in this}}
   
-  {{link-to name 'cities.show' this}}
+  {{#link-to 'cities.show' city}} {{city.name }} ({{city.markets.length}}) {{/link-to}}
 {{/each}}
+

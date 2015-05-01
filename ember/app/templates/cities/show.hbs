@@ -1,7 +1,7 @@
-<h4>{{name}}</h4>
+<h4>{{this.name}}</h4>
 <h5>Markets</h5>
 <ul>
-{{#each markets}}
-  <li>{{title}}</li>
-  {{/each}}
+{{#each market in this.markets}}
+  <li>{{market.title}}</li>
+{{/each}}
   </ul>

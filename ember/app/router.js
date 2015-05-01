@@ -8,7 +8,9 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('about');
   this.resource('cities', function() {
-    this.route('show', {path: ':city_id'});
+    this.route('show', {path: '/:city_id'}, function(){
+      this.resource('markets', function(){});
+    });
   });
 });
 

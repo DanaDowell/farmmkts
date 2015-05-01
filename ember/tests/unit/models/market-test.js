@@ -1,11 +1,11 @@
-/*import {
+import {
   moduleForModel,
   test
 } from 'ember-qunit';
 
 moduleForModel('market', {
   // Specify the other units that are required for this test.
-  needs: []
+  needs: ["model:city"]
 });
 
 test('it exists', function(assert) {
@@ -13,4 +13,3 @@ test('it exists', function(assert) {
   // var store = this.store();
   assert.ok(!!model);
 });
-*/

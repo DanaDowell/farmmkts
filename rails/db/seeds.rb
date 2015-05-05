@@ -5,12 +5,14 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+calif = State.create(name: 'California');
+
 saus = City.create(name: 'Sausalito');
 mv = City.create(name: 'Mill Valley');
 larks = City.create(name: 'Larkspur');
 
-saus.markets.create(title: "saus 1");
-saus.markets.create(title: "saus 2");
-mv.markets.create(title: "mv 1");
-larks.markets.create(title: "larks 1");
-larks.markets.create(title: "larks 2");
+Market.create(title: "saus UNO" dayweek: "thursday");
+Market.create(title: "saus 2", dayweek: "thursday");
+Market.create(title: "mv 1", dayweek: "thursday");
+Market.create(title: "larks 1", dayweek: "thursday");
+Market.create(title: "larks 2", dayweek: "thursday");

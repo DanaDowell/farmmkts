@@ -1,3 +1,5 @@
 class MarketSerializer < ActiveModel::Serializer
-  attributes :id, :title
+  embed :ids, include: true
+
+  attributes :id, :title, :dayweek
 end

@@ -3,6 +3,6 @@ class Api::CitiesController < ApplicationController
     render json: City.all
   end
   def show
-    render json: Speaker.find(params[:id])
+    render json: City.find(params[:id])
   end
 end

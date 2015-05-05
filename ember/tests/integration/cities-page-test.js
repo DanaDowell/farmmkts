@@ -17,7 +17,7 @@ module('Integration - Cities Page', {
     var markets = [
       {id: 1, title: "saus uno", city_id: 1 },
       {id: 2, title: "saus dos", city_id: 1 },
-      {id: 3, title: "mv 1", city_id: 2 },
+      {id: 3, title: "mv UM", city_id: 2 },
       {id: 4, title: "larks 1", city_id: 3 },
       {id: 5, title: "larks 2", city_id: 3 },
       {id: 6, title: "larks 3", city_id: 3 }

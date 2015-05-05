@@ -2,6 +2,8 @@
 <h5>Markets</h5>
 <ul>
 {{#each market in this.markets}}
-  <li>{{market.title}}</li>
+  
+ 
+  <li>{{#link-to 'markets.show' market}}{{market.title}} {{/link-to}}</li>
 {{/each}}
   </ul>

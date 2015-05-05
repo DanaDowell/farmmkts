@@ -12,6 +12,9 @@ Router.map(function() {
       this.resource('markets', function(){});
     });
   });
+  this.resource('markets', function() {
+    this.route('show', {path: '/:market_id'});
+  });
 });
 
 export default Router.map(function() {});

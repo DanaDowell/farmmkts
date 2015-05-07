@@ -1,0 +1,35 @@
+what IS objectController? if I’m using builtin controller, how do I not use objectController? (no proxy controllers … use ember Controller. ArrayController will be deprecated.)
+
+do I have to have nested route for city/market???
+
+is there an example of db structure for geolocation?
+
+don’t use ‘resource’ anymore, just use ‘route’
+
+maybe take a step back to learn the core components, what they do, and how they work together?
+
+1.13 planned deprecations NOT SUPPOSED TO USE CONTROLLERS … USE SERVICES AND COMPONENTS & use attr with components 
+
+how would you show cities now, then later add county & state?
+
+SINGLE RESPONSIBILITY PRINCIPLE: Controllers violate that; persistent app state & decorating data for templates
+
+research SRP: who is using, only ember? why is it good? why do we want singletons?
+
+NOTE: watching people speak helps with vocabulary
+
+services: singletons that contain app state
+components: decorate data/handle events & actions for templates
+ and high level application actions
+
+views: will be replaced by components in 2.0. DON’T USE.
+(there will be routable components)
+
+computed properties??? what are. 
+- memoization
+- reactification
+- use js getters
+- KVO? use case
+property descripters … 
+
+computed properties cache stuff until you need to change the cached stuff

@@ -1,6 +1,6 @@
-hi
+
 <ul>
-{{#each market in this.markets}}
-  <li>{{this.title}} </li>
+{{#each market in this}}
+  <li>{{#link-to 'markets.show' market}}{{market.title}} {{/link-to}}</li>
 {{/each}}
 </ul>
